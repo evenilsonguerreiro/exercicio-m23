@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded',function(){
     const name = document.querySelector('.profile-name');
     const sobrename = document.querySelector('.profile-username');
     const link = document.querySelector('.profile-link');
-    const folloWing = document.querySelector('.following');
-    const folloWers = document.querySelector('.followers');
-    const repos = document.querySelector('.repos')
-    const numeros = document.querySelector('.numbers')
+    const folloWing = document.querySelector('#following');
+    const folloWers = document.querySelector('#followers');
+    const reposElement = document.querySelector('#repos');
+    
    
     
     
@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded',function(){
             link.href = json.html_url;
             folloWing.innerText = json.following;
             folloWers.innerText = json.followers;
-            repos.innerText = json.public_repos;
+            reposElement.innerText = json.public_repos;
+            
             
                 
         })
