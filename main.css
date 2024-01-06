@@ -70,3 +70,12 @@ header .container {
 .numbers-item h4 {
     font-size: .3em;
 }
+
+@media (max-width:767px){
+    .profile-name{
+        font-size: 25px;
+    }
+    span{
+        font-size: 25px;
+    }
+}
